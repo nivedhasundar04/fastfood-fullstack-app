@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:title="@string/customize_combo"
+        android:titleTextColor="@android:color/white" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp">
+
+            <TextView
+                android:text="@string/select_combo_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <RadioButton
+                    android:id="@+id/burgerOptionButton"
+                    android:text="@string/burger"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <RadioButton
+                    android:id="@+id/sandwichOptionButton"
+                    android:text="@string/sandwich"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </RadioGroup>
+
+            <LinearLayout
+                android:id="@+id/burgerOptionsLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone"
+                android:paddingTop="8dp">
+
+                <TextView
+                    android:text="@string/select_burger_bread"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <RadioGroup
+                    android:id="@+id/burgerBreadGroup"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <RadioButton android:id="@+id/briocheBurgerButton" android:text="Brioche"
+                        android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                    <RadioButton android:id="@+id/wheatBurgerButton" android:text="Wheat"
+                        android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                    <RadioButton android:id="@+id/pretzelBurgerButton" android:text="Pretzel"
+                        android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                </RadioGroup>
+
+                <TextView
+                    android:text="@string/patty_size"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <RadioGroup
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <RadioButton android:id="@+id/singlePattyButton" android:text="Single Patty"
+                        android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                    <RadioButton android:id="@+id/doublePattyButton" android:text="Double Patty"
+                        android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                </RadioGroup>
+
+            </LinearLayout>
+
+            <!-- Sandwich Options -->
+            <LinearLayout
+                android:id="@+id/sandwichOptionsLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone"
+                android:paddingTop="8dp">
+
+                <TextView
+                    android:text="@string/select_sandwich_bread"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <RadioGroup
+                    android:id="@+id/sandwichBreadGroup"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <RadioButton android:id="@+id/briocheSandwichButton" android:text="Brioche"
+                        android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                    <RadioButton android:id="@+id/wheatSandwichButton" android:text="Wheat"
+                        android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                    <RadioButton android:id="@+id/pretzelSandwichButton" android:text="Pretzel"
+                        android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                    <RadioButton android:id="@+id/bagelButton" android:text="Bagel"
+                        android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                    <RadioButton android:id="@+id/sourdoughButton" android:text="Sourdough"
+                        android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                </RadioGroup>
+
+                <TextView
+                    android:text="Select Protein"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <RadioGroup
+                    android:id="@+id/proteinGroup"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <RadioButton android:id="@+id/roastBeefButton" android:text="Roast Beef"
+                        android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                    <RadioButton android:id="@+id/salmonButton" android:text="Salmon"
+                        android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                    <RadioButton android:id="@+id/chickenButton" android:text="Chicken"
+                        android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                </RadioGroup>
+            </LinearLayout>
+
+            <!-- Add-ons Section -->
+            <TextView android:text="Add-ons" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <CheckBox android:id="@+id/lettuceOption" android:text="Lettuce" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+            <CheckBox android:id="@+id/tomatoOption" android:text="Tomatoes" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+            <CheckBox android:id="@+id/onionsOption" android:text="Onions" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+            <CheckBox android:id="@+id/avocadoOption" android:text="Avocado" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+            <CheckBox android:id="@+id/cheeseOption" android:text="Cheese" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+
+            <!-- Side Selection -->
+            <TextView
+                android:text="Select Small Side"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp" />
+
+            <RadioGroup
+                android:id="@+id/sideGroup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <RadioButton android:id="@+id/friesButton" android:text="Fries" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                <RadioButton android:id="@+id/chipsButton" android:text="Chips" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                <RadioButton android:id="@+id/onionRingsButton" android:text="Onion Rings" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                <RadioButton android:id="@+id/appleSlicesButton" android:text="Apple Slices" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+            </RadioGroup>
+
+            <!-- Drink Selection -->
+            <TextView
+                android:text="Select Medium Drink"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp" />
+
+            <RadioGroup
+                android:id="@+id/drinkGroup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <RadioButton android:id="@+id/colaButton" android:text="Cola" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                <RadioButton android:id="@+id/teaButton" android:text="Tea" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                <RadioButton android:id="@+id/juiceButton" android:text="Juice" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+            </RadioGroup>
+
+            <!-- Quantity Section -->
+            <TextView android:text="Quantity:" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <Button android:id="@+id/decreaseButton" android:text="-" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                <TextView android:id="@+id/quantityLabel" android:text="1" android:padding="8dp" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                <Button android:id="@+id/increaseButton" android:text="+" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <!-- Final Add Button -->
+            <Button
+                android:id="@+id/addOrderButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Add Combo to Order"
+                android:layout_marginTop="16dp" />
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

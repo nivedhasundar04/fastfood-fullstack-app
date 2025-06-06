@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">Project55</string>
+    <string name="add_drink_to_order">Add Drink to Order</string>
+    <string name="your_order">Your Order</string>
+    <string name="subtotal_0_00">Subtotal: $0.00</string>
+    <string name="tax_0_00">Tax: $0.00</string>
+    <string name="total_0_00">Total: $0.00</string>
+    <string name="place_order">Place Order</string>
+    <string name="clear_order">Clear Order</string>
+    <string name="past_orders">Past Orders</string>
+    <string name="customize_burger">Customize Burger</string>
+    <string name="select_bread">Select Bread</string>
+    <string name="brioche">Brioche</string>
+    <string name="wheat">Wheat</string>
+    <string name="pretzel">Pretzel</string>
+    <string name="patty_type">Patty Type</string>
+    <string name="single_patty">Single Patty</string>
+    <string name="double_patty">Double Patty</string>
+    <string name="add_ons">Add-ons</string>
+    <string name="lettuce">Lettuce</string>
+    <string name="tomatoes">Tomatoes</string>
+    <string name="onions">Onions</string>
+    <string name="avocado">Avocado</string>
+    <string name="cheese">Cheese</string>
+    <string name="quantity">Quantity:</string>
+    <string name="_0">0</string>
+    <string name="add_burger_to_order">Add Burger to Order</string>
+    <string name="customize_combo">Customize Combo</string>
+    <string name="select_combo_type">Select Combo Type</string>
+    <string name="burger">Burger</string>
+    <string name="sandwich">Sandwich</string>
+    <string name="select_burger_bread">Select Burger Bread</string>
+    <string name="patty_size">Patty Size</string>
+    <string name="select_sandwich_bread">Select Sandwich Bread</string>
+</resources>
